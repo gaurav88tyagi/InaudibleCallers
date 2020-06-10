@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,18 +7,28 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_main"
+        android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <ListView
+<!--    <ListView-->
+<!--        android:id="@+id/recyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" >-->
+<!--</ListView>-->
+
+    <EditText
+            android:id="@+id/et"
+            android:hint="Search By Name"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="20sp">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-    </ListView>
+            android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/recyclerView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
-<!--    </androidx.recyclerview.widget.RecyclerView>-->
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -3,14 +3,14 @@
         android:id="@+id/llColorBox"
         android:orientation="horizontal"
         android:padding="5dp"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <ImageView
             android:id="@+id/contactImage"
             android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@color/design_default_color_error" />
+            android:layout_height="60dp" />
 
     <LinearLayout
             android:orientation="vertical"
